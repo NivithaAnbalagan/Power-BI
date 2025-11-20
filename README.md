@@ -1,20 +1,20 @@
-# Power-BI
+# Bank Customer Analysis
 This project presents an interactive Power BI dashboard designed to analyze key customer insights from a banking dataset. It helps identify customer behavior patterns, product usage using data visualization and DAX-driven metrics.
-# Project Overview
+## Project Overview
 The goal of this project is to enable data-driven decision-making by analyzing customer demographics, financial activity, and banking product adoption. The dashboard provides meaningful insights to help improve customer retention and targeted marketing.
-# Key Insights
+## Key Insights
 - Customer segmentation based on demographics and behavior
 - Churn trends and major factors influencing customer drop-off
 - Loan, credit card, and deposit product utilization
 - Revenue contribution and high-value customer identification
-# Tools & Technologies
+## Tools & Technologies
 - Power BI Desktop
 - Power Query
 - DAX (Data Analysis Expressions)
-# Dashboard
+## Dashboard
  <img width="882" height="497" alt="image" src="https://github.com/user-attachments/assets/1e3adcee-4ef0-4816-b443-98f1e969375e" />
  
-# Dashboard Insights
+## Dashboard Insights
 1. Customer Activity Chart
 This chart represents the proportion of active and inactive customers. It visually highlights how customer engagement levels vary within the bank.
 
@@ -26,7 +26,7 @@ This chart illustrates the distribution of customers based on gender. It helps t
 This visualization represents customers grouped by their credit score levels such as “Good,” “Very Good,” and “Excellent.” It helps the bank identify which credit groups are more likely to remain active or inactive.
 6. Summary Cards
 The dashboard includes cards that provide a quick overview of total customers, active/inactive members, and credit card users. These cards make it easy to view the bank’s key statistics at a glance.
-# DAX Formulas Used
+## DAX Formulas Used
 - Max_Credit = MAX(Bank[CreditScore])
 
 - Totalcustomer = COUNT(Bank[CustomerId])
@@ -43,7 +43,7 @@ The dashboard includes cards that provide a quick overview of total customers, a
   
 - Exit Customers = CALCULATE(COUNT(Bank[Exited]),KEEPFILTERS(Bank[Exited]=1))
 
-# Conclusion
+## Conclusion
 The findings of this project demonstrate the value of visual analytics in enabling the bank to gain a deeper understanding of its customer base and support data-driven strategic decision-making. Based on the insights derived, several recommendations can be implemented to strengthen overall business performance:
 
 - Develop structured engagement initiatives aimed at reactivating customers who exhibit low or declining activity levels.
